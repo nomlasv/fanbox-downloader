@@ -48,16 +48,14 @@
             font-size: 80%;
         }
     </style>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H05HP1B634"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DQBK898627"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-
-        gtag('js', new Date());
-        gtag('config', 'G-H05HP1B634');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-DQBK898627');
     </script>
 </head>
 
@@ -66,7 +64,7 @@
     <h2>fanbox-downloader</h2>
     <div>
         pixiv FANBOX の投稿をZIPとして一括ダウンロードするブックマークレットです。<br>
-        <a href="https://github.com/darekasan/fanbox-downloader">オリジナル</a>から好き勝手に手を加えています。
+        <a href="https://github.com/darekasan/fanbox-downloader">オリジナル</a>の改変の<a href="https://github.com/furubarug/fanbox-downloader">こちら</a>からさらに好き勝手に手を加えています。
     </div>
     <br>
     <div class="code-bg">
@@ -79,13 +77,13 @@
             <button class="copy btn" type="button" id="copy">copy</button>
         </div>
         <div class="code" id="code">
-            javascript:import("https://furubarug.github.io/fanbox-downloader/fanbox-downloader.min.js").then(m=>m.main()).catch(e=>alert(`エラー出た(${e})`));
+            javascript:import("https://nomlasv.github.io/fanbox-downloader/fanbox-downloader.min.js").then(m=>m.main()).catch(e=>alert(`エラー出た(${e})`));
         </div>
 
         <div class="text-body">
             <p>2. FANBOXのクリエイターページか投稿ページ<a href="#cite-1">^1</a>で実行する</p>
             <p>3. 投稿情報がjsonでクリップボードに吐き出される</p>
-            <p>4. ダウンロードページ<a href="#cite-2">^2</a>でまた実行、入力ボックスに3のjsonをコピペ</p>
+            <p>4. <a href="https://download.fanbox.cc/">ダウンロードページ</a>でまた実行、入力ボックスに3のjsonをコピペ</p>
             <p>5. なんかダウンロードはじまる</p>
         </div>
 
@@ -93,7 +91,6 @@
 
         <div class="text-cite">
             <p id="cite-1">[^1]: ○○○.fanbox.ccかfanbox.cc/@○○○から始まるURLのページ</p>
-            <p id="cite-2">[^2]: download.fanbox.ccから始まるURLのページ(画像だとオリジナルサイズで表示のところ)</p>
         </div>
 
         <br>
@@ -101,8 +98,8 @@
         <div class="text-body">
             <h5>リンク</h5>
             <ul>
-                <li><a href="https://github.com/furubarug/fanbox-downloader">Github</a></li>
-                <li><a href="https://github.com/darekasan/fanbox-downloader">オリジナル(フォーク元)</a></li>
+                <li><a href="https://github.com/nomlasv/fanbox-downloader">Github</a></li>
+                <li><a href="https://github.com/furubarug/fanbox-downloader">オリジナル(フォーク元)</a></li>
             </ul>
         </div>
     </div>
